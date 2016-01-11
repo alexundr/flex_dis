@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 100%/1.5em Arial, Helvetica, sans-serif; /* Размер шрифта - 100% (по ум - 16px), и междустрочное расстояние - 1.5em */
+	color: #000;
+}
+
+h2 {
+	font-size: 1.875em; /* 30px/16px */
+}
+
+.container {
+	background: #e2e2e2;
+	width: 90%;
+	margin: 0 auto;
+}
+
+section {
+	width: 67.7083%;
+	float: left;
+}
+
+aside {
+	width: 31.25%;
+	float: right;
+	background: #d1d1d1;
+}
+
+footer {
+	clear: both;
+}

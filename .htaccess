@@ -1,0 +1,14 @@
+# SetEnv TZ Europe/Kiev
+# ServerSignature Off
+# ErrorDocument 503 /template/503.html
+
+RewriteEngine On
+RewriteBase /
+
+# RewriteCond %{HTTP_HOST} ^www.testosvit.com$ [NC]
+# RewriteRule ^(.*)$ http://testosvit.com/$1 [R=301,L]
+
+# RewriteRule     (\.js|\.css|\.jpg|\.JPG|\.gif|\.GIF|\.png|\.PNG|\.txt|\.htm|\.xml|\.mp3|\.ogg|\.ico)$  -  [L]
+# RewriteRule     .*     index.php
+
+AddDefaultCharset UTF-8
