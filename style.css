@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box; /* фиксированный размер элементов учитывая паддинги и прочие отступы */
 }
 
 body {
@@ -18,17 +19,41 @@ h2 {
 	margin: 0 auto;
 }
 
-section {
-	width: 67.7083%;
+.container .cols {
 	float: left;
+	margin: 0 0 1em;
+	padding: 0 1em;
+	background: #fd4;
+	text-align: center;
 }
 
-aside {
-	width: 31.25%;
-	float: right;
-	background: #d1d1d1;
+/* Для горизонтальных отсечений */
+.container :before,
+.container :after,
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
 }
 
-footer {
+.container :before,
+.container :after,
+.row:before,
+.row:after {
 	clear: both;
 }
+/* END Для горизонтальных отсечений */
+
+.container .cols.col-1 { width: 8.3333%; }
+.container .cols.col-2 { width: 16.6666%; }
+.container .cols.col-3 { width: 25%; }
+.container .cols.col-4 { width: 33.3333%; }
+.container .cols.col-5 { width: 41.6666%; }
+.container .cols.col-6 { width: 50%; }
+.container .cols.col-7 { width: 58.3333%; }
+.container .cols.col-8 { width: 66.6666%; }
+.container .cols.col-9 { width: 75%; }
+.container .cols.col-10 { width: 83.3333%; }
+.container .cols.col-11 { width: 91.6666%; }
+.container .cols.col-12 { width: 100%; }
+
